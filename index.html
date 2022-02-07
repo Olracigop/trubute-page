@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Simple tribute page</title>
+<style type="text/css">
+body {
+	background-color:#999793;
+	margin:30;
+}
+.name {
+	box-sizing:border-box;
+	text-align:center;
+}
+.img {
+	display:inline-block;
+	width:100%;
+}
+#intro {
+	text-align:center;
+	font-size:15px;
+	font-family:Arial,sans-serif
+}
+.container {
+	padding:0 2px;
+	font-family:Tahoma,Arial,sans-serif;
+	font-size:18px;
+}
+.poem {
+	font-weight:bold;
+	font-size:18px;
+	font-family:Courier new,monospace;
+}
+</style>
+	</head>
+	<body>
+		<h1 class="name">José Protacio Rizal Mercado y Alonso Realonda</h1>
+		<div class="img">
+		<img src="data:image/jpeg;base64,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" alt="jose rizal" width="100%">
+		<p id="intro">José Protasio Rizal Mercado y Alonso Realonda was a Filipino nationalist, writer and polymath during the tail end of the Spanish colonial period of the Philippines. He is considered as the national hero of the Philippines.</p>
+		</div>
+		
+		<h1 style="text-align:center;">Jose Rizal Contribution</h1>
+		<div class="container">
+		<p><b>Noli Me Tángere</b> (Latin for "Touch me not", with an acute accent added on the final word in accordance with Spanish orthography) is an 1887 novel by José Rizal during the colonization of the Philippines by the Spanish Empire, to describe perceived inequities of the Spanish Catholic friars and the ruling government. <br> <br> Originally written in Spanish, the book is more commonly published and read in the Philippines in either Tagalog or English. Together with its sequel, El filibusterismo (Grade 10), the reading of Noli is obligatory for high school students (Grade 9) throughout the country. The two novels are widely considered the national epic of the Philippines and are adapted in many forms, such as operas, musicals, plays, and other forms of art.
+		
+		The title, which originates from the Biblical passage John 20:13-17, was in Rizal's time a name used by Filipinos for cancer of the eyelids; that as an ophthalmologist himself Rizal was influenced by this fact is suggested in the novel's dedication, "To My fatherland".[citation needed] Rizal's novel aims to probe the cancers of Filipino society.[1] Early English translations of the novel used different titles like An Eagle Flight (1900) and The Social Cancer (1912), but more recent English translations use the original title.</p> <br>
+		<p><b>El filibusterismo</b> (transl. The filibusterism; The Subversive or The Subversion, as in the Locsín English translation, are also possible translations), also known by its alternative English title The Reign of Greed,[1] is the second novel written by Philippine national hero José Rizal. It is the sequel to Noli Me Tángere and, like the first book, was written in Spanish. It was first published in 1891 in Ghent. <br> <br> The novel centers on the Noli-El fili duology's main character Crisóstomo Ibarra, now returning for vengeance as "Simoun". The novel's dark theme departs dramatically from the previous novel's hopeful and romantic atmosphere, signifying Ibarra's resort to solving his country's issues through violent means, after his previous attempt in reforming the country's system made no effect and seemed impossible with the corrupt attitude of the Spaniards toward the Filipinos.
+		
+		The novel, along with its predecessor, was banned in some parts of the Philippines as a result of their portrayals of the Spanish government's abuses and corruption. These novels, along with Rizal's involvement in organizations that aimed to address and reform the Spanish system and its issues, led to Rizal's exile to Dapitan and eventual execution. Both the novel and its predecessor, along with Rizal's last poem, are now considered Rizal's literary masterpieces.
+		
+		Both of Rizal's novels had a profound effect on Philippine society in terms of views about national identity, the Catholic faith and its influence on the Filipino's choice, and the government's issues in corruption, abuse of power, and discrimination, and on a larger scale, the issues related to the effect of colonization on people's lives and the cause for independence. These novels later on indirectly became the inspiration to start the Philippine Revolution.
+		
+		Throughout the Philippines, the reading of both the novel and its predecessor is now mandatory for high school students throughout the archipelago, although it is now read using English, Filipino, and the Philippines' regional languages.</p>
+		</div>
+		<h1 style="text-align:center;">Poetry</h1>
+		<div class="poem">
+		<p>• A La Juventud Filipina</p>
+		<p>• El Canto Del Viajero</p>
+		<p>• Briayle Crismarl</p>
+		<p>• Canto Del Viajero</p>
+		<p>• Canto de María Clara</p>
+		<p>• Dalit sa Paggawa</p>
+		<p>• Felicitación</p>
+		<p>• Kundiman (Tagalog)</p>
+		<p>• Me Piden Versos</p>
+		<p>• Mi primera inspiracion</p>
+		<p>• Mi Retiro</p>
+		<p>• Mi Ultimo Adiós</p>
+		<p>• Por La Educación (Recibe Lustre La Patria)</p>
+		<p>• Sa Sanggol na si Jesus</p>
+		<p>• To My Muse (A Mi Musa)</p>
+		<p>• Un Recuerdo A Mi Pueblo</p>
+		<p>• A Man in Dapitan</p>
+		</div>		
+	</body>
+</html>
